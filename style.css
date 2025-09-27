@@ -160,7 +160,7 @@ nav .fa{
     }
 }
 
-.course{
+.portfolio{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -202,14 +202,31 @@ p{
     }
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Match the fixed width */
+    gap: 30px; /* Consistent spacing */
+    justify-items: center; /* Center the boxes */
+    max-width: 2000px; /* Limit max width for better layout */
+    margin: 0 auto; /* Center the grid */
+}
+
  /* CHANGING THE BOXES IN THE PORTFOLIO SECTION */
-.course-col{
-    flex-basis: 31%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
-    background: #defbffd0;
+.portfolio-col{
+    /* Fixed dimensions for consistent sizing */
+    width: 350px;  /* Fixed width */
+    height: 550px; /* Fixed height */
+    background: #74e8ff9f;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    
+    /* Flexbox to control internal content layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 h3{
@@ -218,7 +235,7 @@ h3{
     margin: 10px 0;
 }
 
-.course-col:hover{
+.portfolio-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
@@ -390,7 +407,7 @@ BELOW IS THE HEADER BACKGROUND!!!
     color: #fff;
 }
 
-.course-col img{
+.portfolio-col img{
     /* height: 50%; */
     width: 50%;
 }
@@ -510,7 +527,7 @@ h3{
     border-radius: 0px;
 }
 
-.course2{
+.portfolio2{
     width: 80%;
     margin: auto;
     text-align: left;
@@ -519,7 +536,7 @@ h3{
 }
 
  /* CHANGING THE BOXES IN THE PORTFOLIO SECTION */
- .course2-col{
+ .portfolio2-col{
     flex-basis: 45%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
     background: #defbffd0;
     border-radius: 10px;
@@ -528,7 +545,7 @@ h3{
     box-sizing: border-box;
 }
 
-.course2-col img{
+.portfolio2-col img{
     /* height: 50%; */
     width: 50%;
 }
@@ -562,7 +579,7 @@ h3{
     /* height: 50%; */
     width: 100%;
 }
-.course-empty{
+.portfolio-empty{
     flex-basis: 31%; /* Change the spacing of the boxes (Use 31% for three boxes)*/
    
     border-radius: 10px;
