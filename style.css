@@ -210,56 +210,57 @@ p{
         flex-direction: column;
     }
 }
-
+/* Portfolio Grid */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Match the fixed width */
-    gap: 30px; /* Consistent spacing */
-    justify-items: center; /* Center the boxes */
-    max-width: 2000px; /* Limit max width for better layout */
-    margin: 0 auto; /* Center the grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* auto-resizes, min 280px */
+    gap: 30px;               /* consistent spacing between cards */
+    justify-items: center;   /* center each card */
+    max-width: 2000px;       /* optional max width for the grid */
+    margin: 0 auto;          /* center the grid within page */
+    padding: 20px;           /* breathing space around */
 }
 
- /* CHANGING THE BOXES IN THE PORTFOLIO SECTION */
-.portfolio-col{
-    /* Fixed dimensions for consistent sizing */
-    width: 350px;  /* Fixed width */
-    height: 550px; /* Fixed height */
+/* Portfolio Card */
+.portfolio-col {
+    width: 100%;             /* take full width of grid cell */
+    max-width: 350px;        /* never get bigger than 350px */
+    min-width: 260px;        /* prevent collapsing too much */
+    height: auto;            /* let height adjust to content */
     background: #74e8ff9f;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    
-    /* Flexbox to control internal content layout */
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    transition: box-shadow 0.3s ease;
 }
 
-h3{
+/* Hover Effect */
+.portfolio-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* Headings inside cards */
+.portfolio-col h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
 
-.portfolio-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
-
-@media(max-width: 1000px){
-    .row{
-        flex-direction: column;
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .portfolio-col {
+        max-width: 90%;   /* take up most of screen */
+        margin-bottom: 20px;
     }
-    .portfolio-col{
-    /* Fixed dimensions for consistent sizing */
-    width: 300px;  /* Fixed width */
-    height: 550px; /* Fixed height */
-    background: #74e8ff9f;
+}
 
-}
-}
 
 /* ABOUT ME SECTION
 BELOW IS THE HEADER BACKGROUND!!!
