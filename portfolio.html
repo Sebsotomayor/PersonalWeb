@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewpoint" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- NAME OF WEBSITE RIGHT HERE!!!!!-->
-    <title> Sebastian Sotomayor Portfolio</title>
+    <title>Sebastian Sotomayor Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <section class="sub-header">
         <nav>
-            
-                <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
-
-            <a href="index.html"><img src="images/SebLogo.png"></a>
+            <!-- CHANGE THE LOGO THAT LEADS TO HOME MENU LATER-->
+            <a href="index.html"><img src="images/SebLogo.png" alt="Logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -25,7 +23,6 @@
                     <li><a href="about.html">ABOUT ME</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="resume.html">RESUME</a></li>
-              
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -36,19 +33,38 @@
         </div>
     </section>
 
-    <!-- CONTENT -->
-   
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <h2>Work Experience</h2>
 
-    <!-- First row of boxes -->
+        <div class="experience-card">
+            <!-- Logo -->
+            <div class="experience-logo">
+                <img src="images/gdms_logo.jpg" alt="GDMS logo">
+            </div>
 
+            <!-- Details -->
+            <div class="experience-details">
+                <h3>Embedded Software Engineering Intern</h3>
+                <p class="company">General Dynamics Mission Systems</p>
+                <p class="date">September 2025 - Present</p>
+                <ul class="description">
+                    <!-- <li>Contributed to the design, development, and testing of embedded software for mission-critical defense systems.</li> -->
+                    <li>Implemented and optimized C/C++ code for real-time operating systems (RTOS) to ensure reliable system performance.</li>
+                    <li>Assisted in hardware-software integration, troubleshooting communication protocols, and validating system-level functionality.</li>
+                    <!-- <li>Collaborated with cross-functional engineering teams to deliver high-quality solutions in compliance with rigorous industry standards.</li> -->
+                    <li>Gained hands-on experience with version control (Git), debugging tools, and embedded development workflows.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
     <section class="portfolio">
-        
-    
         <div class="portfolio-grid">
             <div class="portfolio-col">
-                <img src="images/IEEE.png">
+                <img src="images/IEEE.png" alt="IEEE SoutheastCon">
                 <h3>IEEE Southeast Con 2025 Student Hardware Competition</h3>
-                
                 <h4>August 2024 - March 2025</h4>
                 <br>
                 <p>
@@ -59,14 +75,10 @@
                 </p>
                 <a href="https://www.ece.ucf.edu/electrical-engineering-students-place-second-in-hardware-challenge/" class="hero-btn red-btn">LEARN MORE</a>
             </div>
-       
 
-        
-
-        <div class="portfolio-col">
-            <img src="images/PRSAlogo.jpg">
-            <h3>Marketing Director</h3>
-            
+            <div class="portfolio-col">
+                <img src="images/PRSAlogo.jpg" alt="PRSA Logo">
+                <h3>Marketing Director</h3>
                 <h4>Puerto Rican Student Association</h4>
                 <h4>August 2023 - December 2023</h4>
                 <br>
@@ -78,40 +90,25 @@
                     cultural pride, strengthened campus connections, and built 
                     a welcoming community for Puerto Rican students.
                 </p>
-        </div>
+            </div>
 
-
-
-<!-- 
-               <div class="portfolio-col">
-                <img src="images/SebLogo.png">
+            <!-- Example placeholder for another project -->
+            <!--
+            <div class="portfolio-col">
+                <img src="images/SebLogo.png" alt="Personal Website">
                 <h3>Personal Website</h3>
-               
                 <br>
                 <a href="Proj-webs.html" class="hero-btn red-btn">LEARN MORE</a>
-            </div> -->
-
+            </div>
+            -->
         </div>
 
-
         <div class="center-button">
-                    
             <a href="resume.html" class="hero-btn red-btn">SEE MY RESUME</a>
-         </div>
-
-
-
-        
-
-     </section>
-
-
-
-
+        </div>
+    </section>
 
     <!-- JavaScript for Toggle Menu -->
     <script src="javascript.js"></script>
-
-
 </body>
 </html>
