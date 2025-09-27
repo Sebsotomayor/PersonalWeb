@@ -252,6 +252,13 @@ h3{
     .row{
         flex-direction: column;
     }
+    .portfolio-col{
+    /* Fixed dimensions for consistent sizing */
+    width: 300px;  /* Fixed width */
+    height: 550px; /* Fixed height */
+    background: #74e8ff9f;
+
+}
 }
 
 /* ABOUT ME SECTION
