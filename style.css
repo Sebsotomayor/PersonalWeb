@@ -305,6 +305,14 @@ p {
   }
 }
 
+/* Hide project descriptions on mobile */
+@media (max-width: 768px) {
+  .portfolio-col p {
+    display: none;
+  }
+}
+
+
 /* Sub-header */
 .sub-header {
   position: relative;
