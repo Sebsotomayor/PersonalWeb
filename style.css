@@ -587,14 +587,22 @@ h3{
   /* Animation */
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Fade-in on scroll */
 .experience-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
+/* Hover effect */
+.experience-card:hover {
+  transform: translateY(-8px); /* lift */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.6); /* stronger shadow */
+}
+
+/* Logo container */
 .experience-logo img {
   width: 250px;
   height: 250px;
@@ -631,17 +639,17 @@ h3{
   margin: 15px 0 0 20px;  /* space before and indent bullets */
   padding: 0;
   list-style-type: disc;  /* default bullets */
-  color: #000;            /* make readable against background */
+  color: #000;
 }
 
 .description li {
-  margin-bottom: 8px;     /* spacing between bullets */
+  margin-bottom: 8px;
 }
 
 /* Responsive for larger screens */
 @media (min-width: 768px) {
   .experience-card {
-    flex-direction: row;      /* Side by side on desktop */
+    flex-direction: row;  /* side by side on desktop */
     text-align: left;
   }
 
@@ -658,9 +666,9 @@ h3{
   }
 }
 
+/* Hide description on mobile */
 @media (max-width: 767px) {
   .experience-details .description {
     display: none;
   }
 }
-
