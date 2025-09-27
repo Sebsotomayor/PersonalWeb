@@ -109,7 +109,7 @@ nav .fa{
 
 /* SIDE DISPLAY IF SMALL SCREEN*/
 
-@media(max-width: 1000px){
+@media(max-width: 1200px){
         .text-box h1{
         font-size: 40px;
     }
@@ -284,6 +284,7 @@ BELOW IS THE HEADER BACKGROUND!!!
     color: white;
     padding: 20px 40px;
     border-radius: 8px;
+    font-size: 30px;
 }
 
 .sub-header nav {
@@ -328,7 +329,7 @@ BELOW IS THE HEADER BACKGROUND!!!
 
 }
 
- @media(max-width: 1000px){
+ @media(max-width: 1200px){
         .sub-header {
             height: 35vh; 
         }
@@ -345,9 +346,6 @@ BELOW IS THE HEADER BACKGROUND!!!
             padding: 15px 30px;
         }
 
-        .sub-header nav img {
-            width: 100px;
-        }
 
         .sub-header .nav-links {
             position: fixed;
@@ -386,6 +384,12 @@ BELOW IS THE HEADER BACKGROUND!!!
             font-size: 30px
         }
             
+    }
+
+    @media(max-width: 700px){
+        .sub-header nav img {
+            width: 75px;
+        }
     }
 
 .about-me{
